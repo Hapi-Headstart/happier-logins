@@ -1,0 +1,35 @@
+{
+  "name": "happier-logins",
+  "version": "1.0.0",
+  "description": "Responsive login page with authentication",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Hapi-Headstart/happier-logins.git"
+  },
+  "keywords": [
+    "responsive",
+    "login",
+    "login",
+    "page",
+    "hapi",
+    "hapi",
+    "headstart",
+    "jade"
+  ],
+  "author": "Amil Vasishtha & Jason Luu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Hapi-Headstart/happier-logins/issues"
+  },
+  "homepage": "https://github.com/Hapi-Headstart/happier-logins",
+  "dependencies": {
+    "bell": "^3.0.0",
+    "hapi": "^8.6.1",
+    "hapi-auth-cookie": "^2.2.0",
+    "jade": "^1.10.0"
+  }
+}

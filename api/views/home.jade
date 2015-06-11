@@ -1,5 +1,28 @@
 doctype html
 html
 	head
+		meta(charset='utf-8')
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		meta(http-equiv='X-UA-Compatible' content='IE=edge')
+		link(href='../../public/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+		link(href='../../public/css/main.css', rel='stylesheet', type='text/css')
+		script(src='../../public/lib/jquery-2.1.3.min.js')
+
 	body
-		hi hi
+		h1 INSERT LOGO HERE
+		.container
+			.row
+				.login
+					form(name='login', action='login', method='post') 
+						input(type='text', name='Username')
+						input(type='password', name='Password')
+						input(type='submit', value='login')
+				.thirdPartyLogin
+					span facebook 
+					span google 
+					span twitter 
+					span linkedin 
+					span github 
+					span instagram 
+
+		script(src='../../public/lib/bootstrap.min.js')

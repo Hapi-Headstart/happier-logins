@@ -1,8 +1,30 @@
-.login form, h1{
+body { 
+  background: url(../media/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.container.intro {
+	background-color: #fff;
+}
+
+.login form, h1, p{
 	text-align: center;
+	margin-top: 10px;
+}
+
+#login, #signup {
+	background-color: #396bbc;
+	color: #fff;
+	margin-top: 15px;
 }
 
 .thirdPartyLogin{
 	text-align: center;
 }
 
+.fa {
+	padding: 20px;
+}

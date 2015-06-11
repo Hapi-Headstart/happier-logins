@@ -5,24 +5,39 @@ html
 		meta(name='viewport', content='width=device-width, initial-scale=1')
 		meta(http-equiv='X-UA-Compatible' content='IE=edge')
 		link(href='../../public/css/bootstrap.min.css', rel='stylesheet', type='text/css')
+		link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet", type='text/css')
 		link(href='../../public/css/main.css', rel='stylesheet', type='text/css')
 		script(src='../../public/lib/jquery-2.1.3.min.js')
 
 	body
-		h1 INSERT LOGO HERE
-		.container
-			.row
-				.login
-					form(name='login', action='login', method='post') 
-						input(type='text', name='Username')
-						input(type='password', name='Password')
-						input(type='submit', value='login')
-				.thirdPartyLogin
-					span facebook 
-					span google 
-					span twitter 
-					span linkedin 
-					span github 
-					span instagram 
+		.container.intro
+			h1 INSERT LOGO HERE
+			.container
+				.row
+					.login
+						form(name='login', action='login', method='post')
+							| Username: 
+							input(type='text', name='Username')
+							br
+							| Password:
+							input(type='password', name='Password')
+							br
+							input.btn#login(type='submit', value='Login')
+							input.btn#signup(type='submit', value='Sign Up')
+
+					p Or login using the options below
+					.thirdPartyLogin
+						span
+							.fa.fa-facebook
+						span
+							.fa.fa-google
+						span
+							.fa.fa-twitter
+						span
+							.fa.fa-linkedin
+						span
+							.fa.fa-github
+						span
+							.fa.fa-instagram
 
 		script(src='../../public/lib/bootstrap.min.js')

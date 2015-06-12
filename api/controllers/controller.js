@@ -16,6 +16,18 @@ module.exports = {
 		handler: function(request, reply) {
 			reply.view('home');
 		}
+	},
+
+	login: {
+		handler: function(request, reply) {
+			reply('login');
+		}
+	},
+
+	signup: {
+		handler: function(request, reply) {
+			reply('signup');
+		}
 	}
 
 };

@@ -1,43 +1,33 @@
-doctype html
-html
-	head
-		meta(charset='utf-8')
-		meta(name='viewport', content='width=device-width, initial-scale=1')
-		meta(http-equiv='X-UA-Compatible' content='IE=edge')
-		link(href='../../public/css/bootstrap.min.css', rel='stylesheet', type='text/css')
-		link(href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css", rel="stylesheet", type='text/css')
-		link(href='../../public/css/main.css', rel='stylesheet', type='text/css')
-		script(src='../../public/lib/jquery-2.1.3.min.js')
+extend layout
 
-	body
-		.container.intro
-			h1 INSERT LOGO HERE
-			.container
-				.row
-					.login
-						form(name='login', action='login', method='post')
-							| Username: 
-							input(type='text', name='Username')
-							br
-							| Password:
-							input(type='password', name='Password')
-							br
-							input.btn#login(type='submit', value='Login')
-							input.btn#signup(type='submit', value='Sign Up')
+block content
 
-					p Or login using the options below
-					.thirdPartyLogin
-						span
-							.fa.fa-facebook
-						span
-							.fa.fa-google
-						span
-							.fa.fa-twitter
-						span
-							.fa.fa-linkedin
-						span
-							.fa.fa-github
-						span
-							.fa.fa-instagram
+	h1 INSERT LOGO HERE
+	.login
+		form(name='login', action='login', method='POST')
+			.formgroup
+				label Username: 
+					input(type='text', name='Username')
+			.formgroup
+				label Password:  
+					input(type='password', name='Password')
+			.formgroup.login
+				input.btn#login(type='submit', value='Login')
 
-		script(src='../../public/lib/bootstrap.min.js')
+		form(name='signup', action='signup', method='GET')
+			input.btn#signup(type='submit', value='Sign Up')
+
+	p Or login using the options below
+	.thirdPartyLogin
+		span
+			.fa.fa-facebook
+		span
+			.fa.fa-google
+		span
+			.fa.fa-twitter
+		span
+			.fa.fa-linkedin
+		span
+			.fa.fa-github
+		span
+			.fa.fa-instagram

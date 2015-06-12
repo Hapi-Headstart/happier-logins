@@ -12,32 +12,33 @@ html
 	body
 		.container.intro
 			h1 INSERT LOGO HERE
-			.container
-				.row
-					.login
-						form(name='login', action='login', method='post')
-							| Username: 
+			.login
+				form(name='login', action='login', method='POST')
+					.formgroup
+						label Username: 
 							input(type='text', name='Username')
-							br
-							| Password:
+					.formgroup
+						label Password:  
 							input(type='password', name='Password')
-							br
-							input.btn#login(type='submit', value='Login')
-							input.btn#signup(type='submit', value='Sign Up')
+					.formgroup.login
+						input.btn#login(type='submit', value='Login')
 
-					p Or login using the options below
-					.thirdPartyLogin
-						span
-							.fa.fa-facebook
-						span
-							.fa.fa-google
-						span
-							.fa.fa-twitter
-						span
-							.fa.fa-linkedin
-						span
-							.fa.fa-github
-						span
-							.fa.fa-instagram
+				form(name='signup', action='signup', method='GET')
+					input.btn#signup(type='submit', value='Sign Up')
+
+			p Or login using the options below
+			.thirdPartyLogin
+				span
+					.fa.fa-facebook
+				span
+					.fa.fa-google
+				span
+					.fa.fa-twitter
+				span
+					.fa.fa-linkedin
+				span
+					.fa.fa-github
+				span
+					.fa.fa-instagram
 
 		script(src='../../public/lib/bootstrap.min.js')

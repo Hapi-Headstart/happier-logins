@@ -2,32 +2,29 @@ extend layout
 
 block content
 
-	h1 INSERT LOGO HERE
-	.login
-		form(name='login', action='login', method='POST')
-			.formgroup
-				label Username: 
-					input(type='text', name='Username')
-			.formgroup
-				label Password:  
-					input(type='password', name='Password')
-			.formgroup.login
-				input.btn#login(type='submit', value='Login')
+	.row.login
+		.col-sm-6.col-md-4.col-md-offset-4
+			h1.text-center.login-title
+			.account-wall
+				img.profile-img(src='../../public/media/javelin.png', alt='')
+				form.form-signin(action='login', method='POST')
+					input.form-control(type='text', placeholder='Email', required='', autofocus='')
+					input.form-control(type='password', placeholder='Password', required='')
+					button.btn.btn-lg.btn-primary.btn-block(type='submit', value='login')
+						| Sign in
+				a.text-center.new-account(href='/signup') Create an account
 
-		form(name='signup', action='signup', method='GET')
-			input.btn#signup(type='submit', value='Sign Up')
-
-	p Or login using the options below
-	.thirdPartyLogin
-		span
-			.fa.fa-facebook
-		span
-			.fa.fa-google
-		span
-			.fa.fa-twitter
-		span
-			.fa.fa-linkedin
-		span
-			.fa.fa-github
-		span
-			.fa.fa-instagram
+				p.text-center.third-party-login Or login using the options below
+				.text-center
+					span
+						.fa.fa-facebook
+					span
+						.fa.fa-google
+					span
+						.fa.fa-twitter
+					span
+						.fa.fa-linkedin
+					span
+						.fa.fa-github
+					span
+						.fa.fa-instagram

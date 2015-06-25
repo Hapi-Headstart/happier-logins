@@ -18,8 +18,10 @@ var server = new Hapi.Server({
 
 server.connection({ host: 'localhost', port:8080});
 
+//For third-party authentication
 server.register([Bell, Cookie], function(err) {
 
+//To use jade view engine
 	server.views({
 		engines: {
 			jade: require("jade")

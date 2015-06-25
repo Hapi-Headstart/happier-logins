@@ -3,6 +3,7 @@ var Config = require('../config');
 
 module.exports = {
 
+//To serve public files, css, lib, etc
 	serveFile: {
 		auth: false,
 		handler: {
